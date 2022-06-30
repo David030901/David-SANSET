@@ -5,7 +5,7 @@ import { useSelector} from "react-redux";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
-const Cart = () => {
+const Sell = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   return (
     <Helmet title="Cart">
@@ -14,7 +14,7 @@ const Cart = () => {
           <Row>
             <Col lg="12">
               {cartItems.length === 0 ? (
-                <h5 className="text-center">UBAH PROFIL</h5>
+                <h5 className="text-center">Tambah Produk Anda </h5>
               ) : (
                 <table className="table table-bordered">
                   <thead>
@@ -27,10 +27,10 @@ const Cart = () => {
               <div className="mt-4">
                 <div className="cart__page-btn">
                   <button className="addTOCart__btn me-4">
-                    <Link to="/profile">Profil Pembeli</Link>
+                    <Link to="/addproduct">Tambah Produk</Link>
                   </button>
                   <button className="addTOCart__btn">
-                    <Link to="/checkout">Chekout sekarang </Link>
+                    <Link to="/profileseller">Profile </Link>
                   </button>
                 </div>
               </div>
@@ -41,4 +41,4 @@ const Cart = () => {
     </Helmet>
   );
 };
-export default Cart;
+export default Sell;

@@ -1,21 +1,16 @@
 import React, { useState } from "react";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
-
 import { Container, Row, Col } from "reactstrap";
-
 import products from "../assets/fake-data/products";
 import ProductCard from "../components/UI/product-card/ProductCard";
 import ReactPaginate from "react-paginate";
-
 import "../styles/all-foods.css";
 import "../styles/pagination.css";
 
 const AllFoods = () => {
   const [searchTerm, setSearchTerm] = useState("");
-
   const [pageNumber, setPageNumber] = useState(0);
-
   const searchedProduct = products.filter((item) => {
     if (searchTerm.value === "") {
       return item;
@@ -35,7 +30,6 @@ const AllFoods = () => {
   );
 
   const pageCount = Math.ceil(searchedProduct.length / productPerPage);
-
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
@@ -43,7 +37,6 @@ const AllFoods = () => {
   return (
     <Helmet title="All-Foods">
       <CommonSection title="Makanan - Minuman - Cemilan" />
-
       <section>
         <Container>
           <Row>

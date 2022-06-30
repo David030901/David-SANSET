@@ -26,12 +26,12 @@ const Footer = () => {
             <h5 className="footer__title">Jam Buka</h5>
             <ListGroup className="deliver__time-list">
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Senin - Jumat</span>
+                <span>Setiap Hari</span>
                 <p>18.00 - 21.00</p>
               </ListGroupItem>
 
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Sabtu - Minggu</span>
+                <span>Kalo Mager Ya Tutup :)</span>
                 <p>Tutup</p>
               </ListGroupItem>
             </ListGroup>
@@ -68,7 +68,7 @@ const Footer = () => {
         <Row className="mt-5">
           <Col lg="6" md="6">
             <p className="copyright__text">
-              Copyright - 2022, Website made by generasi GIGIH 2.0 [ Arif, Shodik, Sintia, Lulu, David ]  All Rights
+              Copyright - 2022, Website made by Generasi GIGIH 2.0 [ Arif, Shodik, Sintia, Lulu, David ]  All Rights
               Reserved.
             </p>
           </Col>
@@ -77,27 +77,27 @@ const Footer = () => {
               <p className="m-0">Follow: </p>
               <span>
                 {" "}
-                <Link to="https://www.facebook.com/muhib160">
+                <Link to="#">
                   <i class="ri-facebook-line"></i>
                 </Link>{" "}
               </span>
 
               <span>
-                <Link to="https://github.com/muhib160">
+                <Link to="#">
                   <i class="ri-github-line"></i>
                 </Link>
               </span>
 
               <span>
                 {" "}
-                <Link to=" https://www.youtube.com/c/MuhibsTechDiary">
+                <Link to="#">
                   <i class="ri-youtube-line"></i>
                 </Link>{" "}
               </span>
 
               <span>
                 {" "}
-                <Link to=" https://www.linkedin.com/in/muhib160/">
+                <Link to=" #">
                   <i class="ri-linkedin-line"></i>
                 </Link>{" "}
               </span>

@@ -1,129 +1,129 @@
-// import React, { useRef } from "react";
+import React, { useRef } from "react";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
 import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
-// const Register = () => {
-//   const signupNameRef = useRef();
-//   const signupPasswordRef = useRef();
-//   const signupEmailRef = useRef();
+const Register = () => {
+  const signupNameRef = useRef();
+  const signupPasswordRef = useRef();
+  const signupEmailRef = useRef();
 
-//   const submitHandler = (e) => {
-//     e.preventDefault();
-//   };
+  const submitHandler = (e) => {
+    e.preventDefault();
+  };
 
-//   return (
-//     <Helmet title="Signup">
-//       <CommonSection title="Signup" />
-//       <section>
-//         <Container>
-//           <Row>
-//             <Col lg="6" md="6" sm="12" className="m-auto text-center">
-//               <form className="form mb-5" onSubmit={submitHandler}>
-//                 <div className="form__group">
-//                   <input
-//                     type="text"
-//                     placeholder="Full name"
-//                     required
-//                     ref={signupNameRef}
-//                   />
-//                 </div>
-//                 <div className="form__group">
-//                   <input
-//                     type="email"
-//                     placeholder="Email"
-//                     required
-//                     ref={signupEmailRef}
-//                   />
-//                 </div>
-//                 <div className="form__group">
-//                   <input
-//                     type="password"
-//                     placeholder="Password"
-//                     required
-//                     ref={signupPasswordRef}
-//                   />
-//                 </div>
-//                 <button type="submit" className="addTOCart__btn">
-//                   Sign Up
-//                 </button>
-//               </form>
-//               <Link to="/login">Sudah punya akun? Login</Link>
-//             </Col>
-//           </Row>
-//         </Container>
-//       </section>
-//     </Helmet>
-//   );
-// };
-
-// export default Register;
-
-
-
-import React from "react";
-
-const Signup = () => {
-    return (
-        <div>
-            {/* <!-- Button trigger modal --> */}
-            <button type="button" className="btn btn-outline-danger mb-1" data-bs-toggle="modal" data-bs-target="#signupModal" style={{ marginRight: "8px" }}>
-                <span className="fa fa-user-plus me-1"></span>Daftar
-            </button>
-
-            {/* <!-- Modal --> */}
-            <div className="modal fade" id="signupModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">
-                                Daftar
-                            </h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            <button className="btn btn-danger w-100 mb-4">
-                                <span className="fa fa-google me-2"></span> Daftar dengan Google
-                            </button>
-                            <button className="btn btn-danger w-100 mb-4">
-                                <span className="fa fa-facebook me-2"></span> Daftar dengan Facebook
-                            </button>
-                            <form>
-                                <div className="mb-3">
-                                    <label htmlFor="exampleInput" className="form-label">
-                                        Username
-                                    </label>
-                                    <input type="text" className="form-control" id="exampleInput" />
-                                </div>
-                                <div className="mb-3">
-                                    <label htmlFor="exampleInputEmail1" className="form-label">
-                                        Alamat email
-                                    </label>
-                                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                                    <div id="emailHelp" className="form-text">
-                                        Kami tidak akan pernah membagikan email Anda kepada orang lain.
-                                    </div>
-                                </div>
-                                <div className="mb-3">
-                                    <label htmlFor="exampleInputPassword1" className="form-label">
-                                        Kata Sandi
-                                    </label>
-                                    <input type="password" className="form-control" id="exampleInputPassword1" />
-                                </div>
-                                <button type="submit" className="btn btn-outline-danger w-100 mt-5">
-                                    Daftar
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+  return (
+    <Helmet title="Signup">
+      <CommonSection title="Signup" />
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6" md="6" sm="12" className="m-auto text-center">
+              <form className="form mb-5" onSubmit={submitHandler}>
+                <div className="form__group">
+                  <input
+                    type="text"
+                    placeholder="Full name"
+                    required
+                    ref={signupNameRef}
+                  />
                 </div>
-            </div>
-        </div>
-    );
+                <div className="form__group">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    required
+                    ref={signupEmailRef}
+                  />
+                </div>
+                <div className="form__group">
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    required
+                    ref={signupPasswordRef}
+                  />
+                </div>
+                <button type="submit" className="addTOCart__btn">
+                  REGISTER
+                </button>
+              </form>
+              <Link to="/login">Sudah punya akun? LOGIN</Link>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+    </Helmet>
+  );
 };
 
-export default Signup;
+export default Register;
+
+
+
+// import React from "react";
+
+// const Signup = () => {
+//     return (
+//         <div>
+//             {/* <!-- Button trigger modal --> */}
+//             <button type="button" className="btn btn-outline-danger mb-1" data-bs-toggle="modal" data-bs-target="#signupModal" style={{ marginRight: "8px" }}>
+//                 <span className="fa fa-user-plus me-1"></span>Daftar
+//             </button>
+
+//             {/* <!-- Modal --> */}
+//             <div className="modal fade" id="signupModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+//                 <div className="modal-dialog">
+//                     <div className="modal-content">
+//                         <div className="modal-header">
+//                             <h5 className="modal-title" id="exampleModalLabel">
+//                                 Daftar
+//                             </h5>
+//                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+//                         </div>
+//                         <div className="modal-body">
+//                             <button className="btn btn-danger w-100 mb-4">
+//                                 <span className="fa fa-google me-2"></span> Daftar dengan Google
+//                             </button>
+//                             <button className="btn btn-danger w-100 mb-4">
+//                                 <span className="fa fa-facebook me-2"></span> Daftar dengan Facebook
+//                             </button>
+//                             <form>
+//                                 <div className="mb-3">
+//                                     <label htmlFor="exampleInput" className="form-label">
+//                                         Username
+//                                     </label>
+//                                     <input type="text" className="form-control" id="exampleInput" />
+//                                 </div>
+//                                 <div className="mb-3">
+//                                     <label htmlFor="exampleInputEmail1" className="form-label">
+//                                         Alamat email
+//                                     </label>
+//                                     <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+//                                     <div id="emailHelp" className="form-text">
+//                                         Kami tidak akan pernah membagikan email Anda kepada orang lain.
+//                                     </div>
+//                                 </div>
+//                                 <div className="mb-3">
+//                                     <label htmlFor="exampleInputPassword1" className="form-label">
+//                                         Kata Sandi
+//                                     </label>
+//                                     <input type="password" className="form-control" id="exampleInputPassword1" />
+//                                 </div>
+//                                 <button type="submit" className="btn btn-outline-danger w-100 mt-5">
+//                                     Daftar
+//                                 </button>
+//                             </form>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default Signup;
 
 
 

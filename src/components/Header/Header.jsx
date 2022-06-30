@@ -27,8 +27,8 @@ const nav__links = [
     path: "/setting",
   },
   {
-    display: "Cell",
-    path: "/",
+    display: "Sell",
+    path: "/sell",
   },
 ];
 

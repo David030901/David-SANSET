@@ -1,16 +1,12 @@
 import React, { useState, useEffect } from "react";
-
 import products from "../assets/fake-data/products";
 import { useParams } from "react-router-dom";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/common-section/CommonSection";
 import { Container, Row, Col } from "reactstrap";
-
 import { useDispatch } from "react-redux";
 import { cartActions } from "../store/shopping-cart/cartSlice";
-
 import "../styles/product-details.css";
-
 import ProductCard from "../components/UI/product-card/ProductCard";
 
 const FoodDetails = () => {
@@ -20,11 +16,9 @@ const FoodDetails = () => {
   const [reviewMsg, setReviewMsg] = useState("");
   const { id } = useParams();
   const dispatch = useDispatch();
-
   const product = products.find((product) => product.id === id);
   const [previewImg, setPreviewImg] = useState(product.image01);
   const { title, price, category, desc, image01 } = product;
-
   const relatedProduct = products.filter((item) => category === item.category);
 
   const addItem = () => {
@@ -40,7 +34,6 @@ const FoodDetails = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-
     console.log(enteredName, enteredEmail, reviewMsg);
   };
 
@@ -129,14 +122,14 @@ const FoodDetails = () => {
               ) : (
                 <div className="tab__form mb-3">
                   <div className="review pt-5">
-                    <p className="user__name mb-0">Jhon Doe</p>
-                    <p className="user__email">jhon1@gmail.com</p>
-                    <p className="feedback__text">great product</p>
+                    <p className="user__name mb-0">Andika Setiawan</p>
+                    <p className="user__email">Andika12@gmail.com</p>
+                    <p className="feedback__text">Mantap kali</p>
                   </div>
 
                   <div className="review">
-                    <p className="user__name mb-0">Jhon Doe</p>
-                    <p className="user__email">jhon1@gmail.com</p>
+                    <p className="user__name mb-0">Thoriq Ahmad</p>
+                    <p className="user__email">Ahmad1@gmail.com</p>
                     <p className="feedback__text">great product</p>
                   </div>
 

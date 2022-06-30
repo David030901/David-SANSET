@@ -1,6 +1,7 @@
 .checkout__bill {
-  background: #fde4e4;
+  background: #a5a5a57e;
   padding: 30px;
+  border-radius: 15px;
 }
 
 .checkout__total {
