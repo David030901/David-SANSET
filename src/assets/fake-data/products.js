@@ -1,4 +1,3 @@
-// all images imported from images directory
 import product_01_image_01 from "../images/product_01.jpg";
 import product_01_image_02 from "../images/product_01.1.jpg";
 import product_01_image_03 from "../images/product_01.3.jpg";
@@ -42,7 +41,7 @@ import product_10_image_03 from "../images/nasbar 1.jpg";
 import product_11_image_01 from "../images/nasgor ts 1.jpg";
 import product_11_image_02 from "../images/nasgor ts.jpeg";
 import product_11_image_03 from "../images/nasgor ts 1.jpg";
-// shfhdkan
+
 import product_12_image_01 from "../images/jus jam.jpg";
 import product_12_image_02 from "../images/jus jam 1.jpg";
 import product_12_image_03 from "../images/jus jam.jpg";

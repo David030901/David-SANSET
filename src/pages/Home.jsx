@@ -4,15 +4,12 @@ import { Container, Row, Col } from "reactstrap";
 import heroImg from "../assets/images/hero.png";
 import "../styles/hero-section.css";
 import { Link } from "react-router-dom";
-import Category from "../components/UI/category/Category.jsx";
 import "../styles/home.css";
-import featureImg01 from "../assets/images/service-01.png";
+import featureImg01 from "../assets/images/service-03.png";
 import featureImg02 from "../assets/images/service-02.png";
-import featureImg03 from "../assets/images/service-03.png";
+import featureImg03 from "../assets/images/service-01.png";
 import products from "../assets/fake-data/products.js";
 import ProductCard from "../components/UI/product-card/ProductCard.jsx";
-import networkImg from "../assets/images/network.png";
-import TestimonialSlider from "../components/UI/slider/TestimonialSlider.jsx";
 
 const featureData = [
   {
@@ -162,34 +159,13 @@ const Home = () => {
           <Row>
             <Col lg="12" className="text-center">
               <h2>Rekomendasi Makanan</h2>
+              
             </Col>
-
             {allProducts.map((item) => (
               <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
                 <ProductCard item={item} />
               </Col>
             ))}
-          </Row>
-        </Container>
-      </section>
-
-      <section>
-        <Container>
-          <Row>
-            <Col lg="6" md="6">
-              <div className="testimonial ">
-                <h5 className="testimonial__subtitle mb-4">Komentar</h5>
-                <h2 className="testimonial__title mb-4">
-                  Apa <span>Kata</span> Mereka ?
-                </h2>
-
-                <TestimonialSlider />
-              </div>
-            </Col>
-
-            <Col lg="6" md="6">
-              <img src={networkImg} alt="testimonial-img" className="w-100" />
-            </Col>
           </Row>
         </Container>
       </section>

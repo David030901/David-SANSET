@@ -1,11 +1,8 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import logo from "../../assets/images/res-logo.png";
-
 import "../../styles/footer.css";
-
 import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <footer className="footer">
@@ -16,8 +13,8 @@ const Footer = () => {
               <img src={logo} alt="logo" />
               <h5>Sanset</h5>
               <p>
-                Pusat makanan murah dan layak konsumsi
-                Tunggu apalagi segera order ya
+                Website makanan murah dan layak konsumsi
+                Tunggu apalagi yuk segera order ya
               </p>
             </div>
           </Col>
@@ -55,21 +52,17 @@ const Footer = () => {
 
           <Col lg="3" md="4" sm="6">
             <h5 className="footer__title">Developer</h5>
-            <p>@arifnas___, @shodiksetiawan, @lulu @sintia @david</p>
-            {/* <div className="newsletter">
-              <input type="email" placeholder="Enter your email" />
-              <span>
-                <i class="ri-send-plane-line"></i>
-              </span>
-            </div> */}
+            <p>[ M. Arif Nasrullah ]</p>
+            <p>[ Shodik Setiawan ]</p>
+            <p>[ Lulu Shafira Aulia ]</p>
+            <p>[ Sinthia Audrey C. ]</p>
           </Col>
         </Row>
 
         <Row className="mt-5">
           <Col lg="6" md="6">
             <p className="copyright__text">
-              Copyright - 2022, Website made by Generasi GIGIH 2.0 [ Arif, Shodik, Sintia, Lulu, David ]  All Rights
-              Reserved.
+              Copyright - 2022, Website made by Generasi GIGIH 2.0 (ASLS) All Rights Reserved.
             </p>
           </Col>
           <Col lg="6" md="6">

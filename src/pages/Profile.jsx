@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import CommonSection from "../components/UI/common-section/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
-
 import "../styles/checkout.css";
 
 const Profile = () => {
@@ -10,9 +9,7 @@ const Profile = () => {
   const [enterEmail, setEnterEmail] = useState("");
   const [enterNumber, setEnterNumber] = useState("");
   const [enterCity, setEnterCity] = useState("");
-
   const shippingInfo = [];
-
   const submitHandler = (e) => {
     e.preventDefault();
     const userShippingAddress = {

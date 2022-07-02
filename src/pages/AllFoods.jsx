@@ -57,8 +57,6 @@ const AllFoods = () => {
               <div className="sorting__widget text-end">
                 <select className="w-50">
                 <option>Default</option>
-                  <option value="ascending">Alfabet A-Z</option>
-                  <option value="descending">Alfabet Z-A</option>
                   <option value="high-price">Harga Tertinggi</option>
                   <option value="low-price">Harga Terendah</option>
                 </select>

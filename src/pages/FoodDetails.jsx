@@ -87,14 +87,14 @@ const FoodDetails = () => {
                 <h2 className="product__title mb-3">{title}</h2>
                 <p className="product__price">
                   {" "}
-                  Harga: <span> Rp {price}</span>
+                  Harga : <span> Rp {price}</span>
                 </p>
                 <p className="category mb-5">
-                  Kategori: <span>{category}</span>
+                  Kategori : <span>{category}</span>
                 </p>
 
                 <button onClick={addItem} className="addTOCart__btn">
-                  Tambah Ke Keranajang
+                  Tambah Ke Keranjang
                 </button>
               </div>
             </Col>
@@ -130,13 +130,13 @@ const FoodDetails = () => {
                   <div className="review">
                     <p className="user__name mb-0">Thoriq Ahmad</p>
                     <p className="user__email">Ahmad1@gmail.com</p>
-                    <p className="feedback__text">great product</p>
+                    <p className="feedback__text">Harganya murah banget!</p>
                   </div>
 
                   <div className="review">
                     <p className="user__name mb-0">Jhon Doe</p>
                     <p className="user__email">jhon1@gmail.com</p>
-                    <p className="feedback__text">great product</p>
+                    <p className="feedback__text">Rekomen banget buat anak kost saat akhir bulan :)</p>
                   </div>
                   <form className="form" onSubmit={submitHandler}>
                     <div className="form__group">
