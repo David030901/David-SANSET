@@ -28,7 +28,6 @@ const Register = () => {
         window.location.href = "/";
     }
 
-
     return (
         <Helmet title="Register ">
             <CommonSection title="Register" />
