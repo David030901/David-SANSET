@@ -5,4 +5,8 @@
     border-radius: 5px;
     transition: 0.4s;
   }
-  
+.m-auto text-center {
+    background: #a5a5a57e;
+    padding: 30px;
+    border-radius: 15px;
+  }
