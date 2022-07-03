@@ -96,6 +96,9 @@ const FoodDetails = () => {
                 <button onClick={addItem} className="addTOCart__btn">
                   Add To Cart
                 </button>
+                <button type="whatsapp" className="addTOCart__btn" id="wa_btn">
+                  <a className="whatsapp" href="https://wa.me/+6285200167962" target="_blank">Ask Seller</a>
+                </button>
               </div>
             </Col>
 

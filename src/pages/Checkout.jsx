@@ -77,6 +77,11 @@ const Checkout = () => {
                 <button type="submit" className="addTOCart__btn">
                   Checkout
                 </button>
+
+                <button type="whatsapp" className="addTOCart__btn" id="wa_btn">
+                  <a className="whatsapp" href="https://wa.me/+6285200167962" target="_blank">Confirm Order</a>
+                </button>
+                
               </form>
             </Col>
 

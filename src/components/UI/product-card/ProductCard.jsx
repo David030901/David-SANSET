@@ -31,7 +31,7 @@ const ProductCard = (props) => {
         <div className=" d-flex align-items-center justify-content-between ">
           <span className="product__price">Rp {price}</span>
           <button className="addTOCart__btn" onClick={addToCart}>
-            Tambah 
+            Add To Cart 
           </button>
         </div>
       </div>

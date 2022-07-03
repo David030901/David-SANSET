@@ -3,6 +3,14 @@
   padding: 30px;
   border-radius: 15px;
 }
+.whatsapp{
+  text-decoration: none;
+}
+
+#wa_btn{
+  margin-left: 10px;
+
+}
 
 .checkout__total {
   border-top: 1px solid #ddd;

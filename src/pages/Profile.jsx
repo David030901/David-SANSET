@@ -35,7 +35,7 @@ const Profile = () => {
               <form className="checkout__form" onSubmit={submitHandler}>
                 <div className="form__group">
                   <input
-                    type="text"
+                    type="name"
                     placeholder="Full Name"
                     required
                     onChange={(e) => setEnterName(e.target.value)}
@@ -61,14 +61,14 @@ const Profile = () => {
 
                 <div className="form__group">
                   <input
-                    type="text"
+                    type="address"
                     placeholder="Address"
                     required
                     onChange={(e) => setEnterCity(e.target.value)}
                   />
                 </div>
                 <button type="submit" className="addTOCart__btn">
-                  <Link to="/profil">Update Profile</Link>
+                  <Link to="/profiluser">Update Profile</Link>
                 </button>
               </form>
             </Col>
