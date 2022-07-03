@@ -4,16 +4,6 @@ import { Provider } from "react-redux";
 import { Router } from "react-router-dom";
 import store from "../store/store.ts"
 
-// it("render page", () => {
-//     render(
-//         <Router>
-//             <Provider store={store}>
-//                     <Profile name={data.name} />
-//             </Provider>
-//         </Router>
-//     )
-// })
-
 const data = {
     name: "enterName"
 };
