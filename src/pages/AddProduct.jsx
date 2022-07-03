@@ -5,23 +5,10 @@ import Helmet from "../components/Helmet/Helmet";
 import "../styles/checkout.css";
 
 const AddProduct = () => {
-  const [enterName, setEnterName] = useState("");
-  const [enterEmail, setEnterEmail] = useState("");
-  const [enterNumber, setEnterNumber] = useState("");
-  const [enterCity, setEnterCity] = useState("");
-  const shippingInfo = [];
-  const submitHandler = (e) => {
-    e.preventDefault();
-    const userShippingAddress = {
-      name: enterName,
-      email: enterEmail,
-      phone: enterNumber,
-      city: enterCity,
-    };
-
-    shippingInfo.push(userShippingAddress);
-    console.log(shippingInfo);
-  };
+  const [setEnterName] = useState("");
+  const [setEnterJM] = useState("");
+  const [setEnterNumber] = useState("");
+  const [ setEnterDesc] = useState("");
 
   return (
     <Helmet title="Add Product">
@@ -31,7 +18,7 @@ const AddProduct = () => {
           <Row>
             <Col lg="8" md="6">
               <h6 className="mb-4">Tambah Produk</h6>
-              <form className="checkout__form" onSubmit={submitHandler}>
+              <form className="checkout__form">
                 <div className="form__group">
                   <input
                     type="text"
@@ -43,15 +30,15 @@ const AddProduct = () => {
 
                 <div className="form__group">
                   <input
-                    type="email"
+                    type="jenis makanan"
                     placeholder="Jenis Makanan"
                     required
-                    onChange={(e) => setEnterEmail(e.target.value)}
+                    onChange={(e) => setEnterJM(e.target.value)}
                   />
                 </div>
                 <div className="form__group">
                   <input
-                    type="number"
+                    type="harga"
                     placeholder="Harga"
                     required
                     onChange={(e) => setEnterNumber(e.target.value)}
@@ -63,7 +50,7 @@ const AddProduct = () => {
                     type="text"
                     placeholder="Deskripsi"
                     required
-                    onChange={(e) => setEnterCity(e.target.value)}
+                    onChange={(e) => setEnterDesc(e.target.value)}
                   />
                 </div>
                 <button type="submit" className="addTOCart__btn">

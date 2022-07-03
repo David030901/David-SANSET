@@ -5,23 +5,10 @@ import Helmet from "../components/Helmet/Helmet";
 import "../styles/checkout.css";
 
 const Profile = () => {
-  const [enterName, setEnterName] = useState("");
-  const [enterEmail, setEnterEmail] = useState("");
-  const [enterNumber, setEnterNumber] = useState("");
-  const [enterCity, setEnterCity] = useState("");
-  const shippingInfo = [];
-  const submitHandler = (e) => {
-    e.preventDefault();
-    const userShippingAddress = {
-      name: enterName,
-      email: enterEmail,
-      phone: enterNumber,
-      city: enterCity,
-    };
-
-    shippingInfo.push(userShippingAddress);
-    console.log(shippingInfo);
-  };
+  const [ setEnterName] = useState("");
+  const [ setEnterJK] = useState("");
+  const [ setEnterNumber] = useState("");
+  const [ setEnterCity] = useState("");  
 
   return (
     <Helmet title="Profile ">
@@ -31,7 +18,7 @@ const Profile = () => {
           <Row>
             <Col lg="8" md="6">
               <h6 className="mb-4">Update Profil</h6>
-              <form className="checkout__form" onSubmit={submitHandler}>
+              <form className="checkout__form" >
                 <div className="form__group">
                   <input
                     type="text"
@@ -43,15 +30,15 @@ const Profile = () => {
 
                 <div className="form__group">
                   <input
-                    type="email"
+                    type="jenis kelamin"
                     placeholder="Jenis Kelamin"
                     required
-                    onChange={(e) => setEnterEmail(e.target.value)}
+                    onChange={(e) => setEnterJK(e.target.value)}
                   />
                 </div>
                 <div className="form__group">
                   <input
-                    type="number"
+                    type="nomor"
                     placeholder="No Handphone"
                     required
                     onChange={(e) => setEnterNumber(e.target.value)}

@@ -4,40 +4,25 @@ import CommonSection from "../components/UI/common-section/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
 import "../styles/checkout.css";
 
-const ProfileSeller = () => {
-  const [enterName, setEnterName] = useState("");
-  const [enterEmail, setEnterEmail] = useState("");
-  const [enterNumber, setEnterNumber] = useState("");
-  const [enterCity, setEnterCity] = useState("");
-
-  const shippingInfo = [];
-
-  const submitHandler = (e) => {
-    e.preventDefault();
-    const userShippingAddress = {
-      name: enterName,
-      email: enterEmail,
-      phone: enterNumber,
-      city: enterCity,
-    };
-
-    shippingInfo.push(userShippingAddress);
-    console.log(shippingInfo);
-  };
+const Profile = () => {
+  const [ setEnterName] = useState("");
+  const [ setEnterJK] = useState("");
+  const [ setEnterNumber] = useState("");
+  const [ setEnterCity] = useState("");  
 
   return (
-    <Helmet title="Profile Seller">
-      <CommonSection title="Profile Seller" />
+    <Helmet title="Profile ">
+      <CommonSection title="Profile " />
       <section>
         <Container>
           <Row>
             <Col lg="8" md="6">
-              <h6 className="mb-4">Profil Seller</h6>
-              <form className="checkout__form" onSubmit={submitHandler}>
+              <h6 className="mb-4">Update Profil</h6>
+              <form className="checkout__form" >
                 <div className="form__group">
                   <input
                     type="text"
-                    placeholder="Nama Pembeli"
+                    placeholder="Nama Lengkap"
                     required
                     onChange={(e) => setEnterName(e.target.value)}
                   />
@@ -45,15 +30,15 @@ const ProfileSeller = () => {
 
                 <div className="form__group">
                   <input
-                    type="email"
+                    type="jenis kelamin"
                     placeholder="Jenis Kelamin"
                     required
-                    onChange={(e) => setEnterEmail(e.target.value)}
+                    onChange={(e) => setEnterJK(e.target.value)}
                   />
                 </div>
                 <div className="form__group">
                   <input
-                    type="number"
+                    type="nomor"
                     placeholder="No Handphone"
                     required
                     onChange={(e) => setEnterNumber(e.target.value)}
@@ -80,4 +65,4 @@ const ProfileSeller = () => {
   );
 };
 
-export default ProfileSeller;
+export default Profile;

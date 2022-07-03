@@ -68,15 +68,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
-
-// return (
-//   
-
-
-//     
-//   </div>
-
-// );
-// }
