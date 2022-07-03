@@ -20,16 +20,11 @@ const Footer = () => {
           </Col>
 
           <Col lg="3" md="4" sm="6">
-            <h5 className="footer__title">Jam Buka</h5>
+            <h5 className="footer__title">Open Hour</h5>
             <ListGroup className="deliver__time-list">
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Setiap Hari</span>
+                <span>Available Every</span>
                 <p>18.00 - 21.00</p>
-              </ListGroupItem>
-
-              <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>Kalo Mager Ya Tutup :)</span>
-                <p>Tutup</p>
               </ListGroupItem>
             </ListGroup>
           </Col>
@@ -38,12 +33,11 @@ const Footer = () => {
             <h5 className="footer__title">Contact</h5>
             <ListGroup className="deliver__time-list">
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <p>Lokasi : Purwokerto, Cilacap, Purbalingga</p>
+                <p>Address : Jakarta , Semarang</p>
               </ListGroupItem>
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
-                <span>No Hp : 08888888888</span>
+                <span>Whatsapp : 08888888888</span>
               </ListGroupItem>
-
               <ListGroupItem className=" delivery__time-item border-0 ps-0">
                 <span>Email: sanset@gmail.com</span>
               </ListGroupItem>

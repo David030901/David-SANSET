@@ -9,4 +9,6 @@ const store = configureStore({
   },
 });
 
+export type TRootState = ReturnType<typeof store.getState>
+
 export default store;

@@ -87,14 +87,14 @@ const FoodDetails = () => {
                 <h2 className="product__title mb-3">{title}</h2>
                 <p className="product__price">
                   {" "}
-                  Harga : <span> Rp {price}</span>
+                  Price : <span> Rp {price}</span>
                 </p>
                 <p className="category mb-5">
-                  Kategori : <span>{category}</span>
+                  Category : <span>{category}</span>
                 </p>
 
                 <button onClick={addItem} className="addTOCart__btn">
-                  Tambah Ke Keranjang
+                  Add To Cart
                 </button>
               </div>
             </Col>
@@ -105,13 +105,13 @@ const FoodDetails = () => {
                   className={` ${tab === "desc" ? "tab__active" : ""}`}
                   onClick={() => setTab("desc")}
                 >
-                  Deskripsi
+                  Description
                 </h6>
                 <h6
                   className={` ${tab === "rev" ? "tab__active" : ""}`}
                   onClick={() => setTab("rev")}
                 >
-                  Ulasan
+                  Review
                 </h6>
               </div>
 
@@ -124,13 +124,13 @@ const FoodDetails = () => {
                   <div className="review pt-5">
                     <p className="user__name mb-0">Andika Setiawan</p>
                     <p className="user__email">Andika12@gmail.com</p>
-                    <p className="feedback__text">Mantap kali</p>
+                    <p className="feedback__text">Makanannya enak</p>
                   </div>
 
                   <div className="review">
                     <p className="user__name mb-0">Thoriq Ahmad</p>
                     <p className="user__email">Ahmad1@gmail.com</p>
-                    <p className="feedback__text">Harganya murah banget!</p>
+                    <p className="feedback__text">Waw murah banget!</p>
                   </div>
 
                   <div className="review">
@@ -142,7 +142,7 @@ const FoodDetails = () => {
                     <div className="form__group">
                       <input
                         type="text"
-                        placeholder="Nama"
+                        placeholder="Name"
                         onChange={(e) => setEnteredName(e.target.value)}
                         required
                       />
@@ -161,7 +161,7 @@ const FoodDetails = () => {
                       <textarea
                         rows={5}
                         type="text"
-                        placeholder="Review Makanan"
+                        placeholder="Review"
                         onChange={(e) => setReviewMsg(e.target.value)}
                         required
                       />
@@ -176,7 +176,7 @@ const FoodDetails = () => {
             </Col>
 
             <Col lg="12" className="mb-5 mt-4">
-              <h2 className="related__Product-title">Rekomendasi</h2>
+              <h2 className="related__Product-title">Recommendation</h2>
             </Col>
 
             {relatedProduct.map((item) => (

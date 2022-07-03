@@ -17,12 +17,12 @@ const AddProduct = () => {
         <Container>
           <Row>
             <Col lg="8" md="6">
-              <h6 className="mb-4">Tambah Produk</h6>
+              <h6 className="mb-4">Add Product</h6>
               <form className="checkout__form">
                 <div className="form__group">
                   <input
                     type="text"
-                    placeholder="Nama Makanan"
+                    placeholder="Food Name"
                     required
                     onChange={(e) => setEnterName(e.target.value)}
                   />
@@ -31,7 +31,7 @@ const AddProduct = () => {
                 <div className="form__group">
                   <input
                     type="jenis makanan"
-                    placeholder="Jenis Makanan"
+                    placeholder="Food Categories"
                     required
                     onChange={(e) => setEnterJM(e.target.value)}
                   />
@@ -39,7 +39,7 @@ const AddProduct = () => {
                 <div className="form__group">
                   <input
                     type="harga"
-                    placeholder="Harga"
+                    placeholder="Price"
                     required
                     onChange={(e) => setEnterNumber(e.target.value)}
                   />
@@ -48,13 +48,13 @@ const AddProduct = () => {
                 <div className="form__group">
                   <input
                     type="text"
-                    placeholder="Deskripsi"
+                    placeholder="Description"
                     required
                     onChange={(e) => setEnterDesc(e.target.value)}
                   />
                 </div>
                 <button type="submit" className="addTOCart__btn">
-                  Tambahkan
+                  Add
                 </button>
               </form>
             </Col>

@@ -9,24 +9,23 @@ import featureImg01 from "../assets/images/service-03.png";
 import featureImg02 from "../assets/images/service-02.png";
 import featureImg03 from "../assets/images/service-01.png";
 import products from "../assets/fake-data/products.js";
-import ProductCard from "../components/UI/product-card/ProductCard.jsx";
 
 const featureData = [
   {
-    title: "Harga Murah",
+    title: "Cheap Price",
     imgUrl: featureImg01,
-    desc: "Harga makanan mendapat diskon mencapai 50% dan sudah terjamin layak konsumsi.",
+    desc: "Every food got discount 50% Off and in condition decent to consume.",
   },
 
   {
-    title: "Bisa Kerjasama",
+    title: "Partnership",
     imgUrl: featureImg02,
-    desc: "Bisa kerjasama dengan perorangan atau kantor.",
+    desc: "Partnership with personal or with company.",
   },
   {
-    title: "Kemudahan Pengiriman",
+    title: "No More Wasting Foods",
     imgUrl: featureImg03,
-    desc: "Kemudahan pengiriman sesuai kemauan pembeli.",
+    desc: "Buy in sanset helping reducing waste foods.",
   },
 ];
 
@@ -40,23 +39,23 @@ const Home = () => {
           <Row>
             <Col lg="6" md="6">
               <div className="hero__content  ">
-                <h5 className="mb-3">Solusi makan enak dengan harga murah</h5>
+                <h5 className="mb-3">Solution for delicious foods with cheap price</h5>
                 <h1 className="mb-4 hero__title">
-                  <span>LAPAR?</span> Anda Datang <br /> Ke tempat
-                  <span> Yang Tepat !</span>
+                  <span>HUNGRY?</span> You Come <br /> To The
+                  <span> Right Site !</span>
                 </h1>
 
-                <p>
-                  Purwokerto - Purbalingga - Cilacap - Banyumas
-                </p>
+                <h6>
+                  Jakarta - Semarang
+                </h6>
 
                 <div className="hero__btns d-flex align-items-center gap-5 mt-4">
                   <button className="order__btn d-flex align-items-center justify-content-between">
-                    Order Sekarang <i class="ri-arrow-right-s-line"></i>
+                    Order Now <i class="ri-arrow-right-s-line"></i>
                   </button>
 
                   <button className="all__foods-btn">
-                    <Link to="/foods">Lihat semua makanan</Link>
+                    <Link to="/foods">See All Foods</Link>
                   </button>
                 </div>
 
@@ -65,14 +64,14 @@ const Home = () => {
                     <span className="shipping__icon">
                       <i class="ri-car-line"></i>
                     </span>{" "}
-                    Kemudahan order
+                    Easy To Order
                   </p>
 
                   <p className=" d-flex align-items-center gap-2 ">
                     <span className="shipping__icon">
                       <i class="ri-shield-check-line"></i>
                     </span>{" "}
-                    Discount 50% dari harga asli
+                    Discount 50% off 
                   </p>
                 </div>
               </div>
@@ -92,9 +91,9 @@ const Home = () => {
           <Row>
             <Col lg="12" className="text-center">
               <h5 className="feature__subtitle mb-4">SANSET</h5>
-              <h2 className="feature__title">Solusi lapar </h2>
+              <h2 className="feature__title">Hungry Solution </h2>
               <h2 className="feature__title">
-                tanpa harus <span>keluar rumah</span>
+                Without <span>Leaving Home</span>
               </h2>
               { }
             </Col>
@@ -110,22 +109,6 @@ const Home = () => {
                   <h5 className=" fw-bold mb-3">{item.title}</h5>
                   <p>{item.desc}</p>
                 </div>
-              </Col>
-            ))}
-          </Row>
-        </Container>
-      </section>
-
-      <section>
-        <Container>
-          <Row>
-            <Col lg="12" className="text-center">
-              <h2>Rekomendasi Makanan</h2>
-              
-            </Col>
-            {allProducts.map((item) => (
-              <Col lg="3" md="4" sm="6" xs="6" key={item.id} className="mt-5">
-                <ProductCard item={item} />
               </Col>
             ))}
           </Row>

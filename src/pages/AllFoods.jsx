@@ -36,7 +36,7 @@ const AllFoods = () => {
 
   return (
     <Helmet title="All-Foods">
-      <CommonSection title="Makanan - Minuman - Cemilan" />
+      <CommonSection title="Foods - Beverages - Snacks" />
       <section>
         <Container>
           <Row>
@@ -44,7 +44,7 @@ const AllFoods = () => {
               <div className="search__widget d-flex align-items-center justify-content-between ">
                 <input
                   type="text"
-                  placeholder="Cari makanan ...."
+                  placeholder="Seacrh"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -57,8 +57,8 @@ const AllFoods = () => {
               <div className="sorting__widget text-end">
                 <select className="w-50">
                 <option>Default</option>
-                  <option value="high-price">Harga Tertinggi</option>
-                  <option value="low-price">Harga Terendah</option>
+                  <option value="high-price">Highest Price</option>
+                  <option value="low-price">Lowest Price</option>
                 </select>
               </div>
             </Col>
@@ -73,8 +73,8 @@ const AllFoods = () => {
               <ReactPaginate
                 pageCount={pageCount}
                 onPageChange={changePage}
-                previousLabel={"Sebelumnya"}
-                nextLabel={"Selanjutnya"}
+                previousLabel={"Previous"}
+                nextLabel={"Next"}
                 containerClassName=" paginationBttns "
               />
             </div>

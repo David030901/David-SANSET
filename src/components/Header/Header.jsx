@@ -23,6 +23,10 @@ const nav__links = [
     display: "Sell",
     path: "/sell",
   },
+  {
+    display: "Profil",
+    path: "/profiluser",
+  },
 ];
 
 const Header = () => {

@@ -4,6 +4,23 @@ import CommonSection from "../components/UI/common-section/CommonSection";
 import Helmet from "../components/Helmet/Helmet";
 
 const Register = () => {
+    const [enterName] = useState("");
+    const [enterEmail] = useState("");
+    const [enterNumber] = useState("");
+    const [enterCity] = useState("");
+    const shippingInfo = [];
+    const submitHandler = (e) => {
+        e.preventDefault();
+        const userShippingAddress = {
+            name: enterName,
+            email: enterEmail,
+            phone: enterNumber,
+            city: enterCity,
+        };
+
+        shippingInfo.push(userShippingAddress);
+        console.log(shippingInfo);
+    };
     const isLogin = localStorage.getItem("isLogin") === "true";
 
     function handleRegister() {
@@ -18,18 +35,18 @@ const Register = () => {
                 <Container>
                     <Row>
                         <Col lg="6" md="6" sm="12" className="m-auto text-center">
-                            <form className="form mb-5">
+                            <form className="form mb-5" onSubmit={submitHandler}>
                                 <div className="form__group">
                                     <input
                                         type="nama"
-                                        placeholder="Nama Lengkap"
+                                        placeholder="Full Name"
                                         required
                                     />
                                 </div>
                                 <div className="form__group">
                                     <input
                                         type="no"
-                                        placeholder="No Handphone"
+                                        placeholder="Whatsapp"
                                         required
                                     />
                                 </div>

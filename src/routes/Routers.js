@@ -11,6 +11,8 @@ import Sell from "../pages/Sell";
 import AddProduct from "../pages/AddProduct";
 import ProfileSeller from "../pages/ProfileSeller";
 import Profile from "../pages/Profile";
+import ProfilUser from "../pages/ProfilUser";
+
 
 const Routers = () => {
   return (
@@ -28,6 +30,7 @@ const Routers = () => {
       <Route path="/profileseller" element={<ProfileSeller />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/register" element={<Register />} />
+      <Route path="/profiluser" element={<ProfilUser />} />
     </Routes>
   );
 };

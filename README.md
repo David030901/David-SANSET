@@ -11,7 +11,6 @@
 - Product Filtering functionality
 - Product page
 - Cart and checkout page
-- Contact page
 - Login and Register page
 - Awesome modern minimalist UI
 
@@ -23,6 +22,9 @@
 2. Redux Toolkit
 3. ReactStrap
 4. CSS
+5. Typescript
+6. Hook
+7. Testing
 
 ### How to start?
 

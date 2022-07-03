@@ -39,12 +39,12 @@ const Checkout = () => {
         <Container>
           <Row>
             <Col lg="8" md="6">
-              <h6 className="mb-4">Alamat pengiriman</h6>
+              <h6 className="mb-4">Delivery Address</h6>
               <form className="checkout__form" onSubmit={submitHandler}>
                 <div className="form__group">
                   <input
                     type="text"
-                    placeholder="Masukkan Nama"
+                    placeholder="Enter Name"
                     required
                     onChange={(e) => setEnterName(e.target.value)}
                   />
@@ -53,7 +53,7 @@ const Checkout = () => {
                 <div className="form__group">
                   <input
                     type="email"
-                    placeholder="Masukkan Email"
+                    placeholder="Enter Email"
                     required
                     onChange={(e) => setEnterEmail(e.target.value)}
                   />
@@ -61,7 +61,7 @@ const Checkout = () => {
                 <div className="form__group">
                   <input
                     type="number"
-                    placeholder="No Whatsapp"
+                    placeholder="Whatsapp"
                     required
                     onChange={(e) => setEnterNumber(e.target.value)}
                   />
@@ -69,13 +69,13 @@ const Checkout = () => {
                 <div className="form__group">
                   <input
                     type="text"
-                    placeholder="Kota"
+                    placeholder="City"
                     required
                     onChange={(e) => setEnterCity(e.target.value)}
                   />
                 </div>
                 <button type="submit" className="addTOCart__btn">
-                  Pembayaran
+                  Checkout
                 </button>
               </form>
             </Col>
@@ -83,14 +83,14 @@ const Checkout = () => {
             <Col lg="4" md="6">
               <div className="checkout__bill">
                 <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Subtotal: <span> Rp {cartTotalAmount}</span>
+                  Price : <span> Rp {cartTotalAmount}</span>
                 </h6>
                 <h6 className="d-flex align-items-center justify-content-between mb-3">
-                  Ongkir: <span> Rp {shippingCost}</span>
+                  Delivery Cost : <span> Rp {shippingCost}</span>
                 </h6>
                 <div className="checkout__total">
                   <h5 className="d-flex align-items-center justify-content-between">
-                    Total: <span> Rp {totalAmount}</span>
+                    Total : <span> Rp {totalAmount}</span>
                   </h5>
                 </div>
               </div>
