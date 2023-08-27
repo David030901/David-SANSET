@@ -50,6 +50,7 @@ const Footer = () => {
             <p>[ Shodik Setiawan ]</p>
             <p>[ Lulu Shafira Aulia ]</p>
             <p>[ Sinthia Audrey C. ]</p>
+            <p>[ David Eddy Putra P. ]</p>
           </Col>
         </Row>
 
